@@ -1,0 +1,612 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/form.css">
+    <!-- Font Awesome Pro v7.2.0 -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/rizmyabdulla/fontawesome-pro@main/releases/v7.2.0/css/fontawesome.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/rizmyabdulla/fontawesome-pro@main/releases/v7.2.0/css/solid.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/rizmyabdulla/fontawesome-pro@main/releases/v7.2.0/css/regular.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/rizmyabdulla/fontawesome-pro@main/releases/v7.2.0/css/light.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/rizmyabdulla/fontawesome-pro@main/releases/v7.2.0/css/duotone.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/rizmyabdulla/fontawesome-pro@main/releases/v7.2.0/css/brands.css" />
+    <!-- À ajouter dans ton <head> -->
+    <link rel="icon" type="image/x-icon" href="assets/images/logos.png" />
+<!-- Boxicons (Lien Cloudflare optimisé pour éviter les erreurs de console) -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/boxicons/2.1.4/css/boxicons.min.css" />
+<!-- Scripts locaux -->
+    <script src="assets/supabase-config.js" defer></script>
+    <script src="assets/script.js" defer></script>    
+    <title>Sondage
+      
+    </title>
+</head>
+<body>
+    <header>
+       <div class="logos"><img src="assets/images/logos.png" alt="logo"></div>
+        <nav>
+            <div class="sondage" id="sondage"><h2>Sondage</h2></div>
+        </nav>
+    </header>
+    <main>
+        <section class="accueil-section" id="accueil-section">
+            <div class="accueil-contenu">
+                <h4>Ton avis compte</h4>
+                <h2>Aide-nous à créer la marque beauté de demain</h2>
+                <p>Ton avis influence directement les futurs <span>produits .</span></p>
+                <div class="accueil-item">
+                    <div>
+                        <i><i class="fa-light fa-sun" style="color: rgb(234, 183, 6);"></i></i>
+                        <h3>Inclusive</h3>
+                        <p>Des produits pensés pour toutes les peaux.</p>
+                    </div>
+                    <div>
+                        <i><i class="fa-light fa-gem" style="color: rgb(234, 183, 6);"></i></i>
+                        <h3>Qualité luxe</h3>
+                        <p>Des formules modernes, efficaces et élégantes.</p>
+                    </div>
+                    <div>
+                        <i><i class="fa-sharp fa-solid fa-tree-palm" style="color: rgb(234, 183, 6);"></i></i>
+                        <h3>Inspirée de nous</h3>
+                        <p>Crée à Madagascar pour le monde.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="accueil-image"><img src="assets/images/accueil-image.png" alt="image descriptif"></div>
+        </section>
+
+    <div class="container-section" id="container-section">
+
+        <section class="question-section active age-section" id="age-section">
+            <h3>Question 1/15</h3>
+            <div class="contenant">
+                <div class="barre-progression"></div>
+            </div>
+            <h2>1. Quel est ton âge ?</h2>
+            <form autocomplete="off">
+                <div>
+                  <input type="radio" id="age_moins_16" name="age" value="under_16">
+                  <label for="age_moins_16">-16 ans</label>
+                </div>
+
+                <div>
+                  <input type="radio" id="age_16_18" name="age" value="age_16_18">
+                  <label for="age_16_18">16-18 ans</label>
+                </div>
+
+                <div>
+                  <input type="radio" id="age_19_22" name="age" value="age_19_22">
+                  <label for="age_19_22">19-22 ans</label>
+                </div>
+
+                <div>
+                  <input type="radio" id="age_23_27" name="age" value="age_23_27">
+                  <label for="age_23_27">23-27 ans</label>
+                </div>
+
+                <div>
+                  <input type="radio" id="age_28_plus" name="age" value="age_28_plus">
+                  <label for="age_28_plus">28+</label>
+                </div>
+            </form>
+
+            <div class="navigation">
+                <div class="retour"><a href="#age-section">Retour</a></div>
+                <div class="suivant"><a href="#frequency-section">suivant <i class='bx bx-right-arrow-alt'></i></a></div>
+            </div>
+
+        </section>
+
+        <section class="question-section frequency-section" id="frequency-section">
+            <h3>Question 2/15</h3>
+            <div class="contenant">
+                <div class="barre-progression"></div>
+            </div>
+            <h2>2. À quelle fréquence achètes-tu du maquillage ?</h2>
+            <form>
+                <div>
+                  <input type="radio" id="option1_q2" name="purchase_frequency" value="very_often">
+                  <label for="option1_q2">Très souvent</label>
+                </div>
+
+                <div>
+                  <input type="radio" id="option2_q2" name="purchase_frequency" value="monthly">
+                  <label for="option2_q2">1 fois par mois</label>
+                </div>
+
+                <div>
+                  <input type="radio" id="option3_q2" name="purchase_frequency" value="occasionally">
+                  <label for="option3_q2">Occasionnellement</label>
+                </div>
+
+                <div>
+                  <input type="radio" id="option4_q2" name="purchase_frequency" value="rarely">
+                  <label for="option4_q2">Rarement</label>
+                </div>
+            </form>
+            <div class="navigation">
+                <div class="retour"><a href="#age-section">Retour</a></div>
+                <div class="suivant"><a href="#products-section">suivant <i class='bx bx-right-arrow-alt'></i></a></div>
+            </div>
+        </section>
+
+        <section class="question-section products-section" id="products-section">
+            <h3>Question 3/15</h3>
+            <div class="contenant">
+                <div class="barre-progression"></div>
+            </div>
+            <h2>3. Quels produits utilises-tu le plus ? (Cases à cocher)</h2>
+            <form>
+                <div>
+                  <input type="checkbox" id="gloss" name="products" value="gloss">
+                  <label for="gloss">Gloss</label>
+                </div>
+
+                <div>
+                  <input type="checkbox" id="lip_oil" name="products" value="lip_oil">
+                  <label for="lip_oil">Lip oil</label>
+                </div>
+
+                <div>
+                  <input type="checkbox" id="rouge_a_levres" name="products" value="lipstick">
+                  <label for="rouge_a_levres">Rouge à lèvres</label>
+                </div>
+
+                <div>
+                  <input type="checkbox" id="blush" name="products" value="blush">
+                  <label for="blush">Blush</label>
+                </div>
+
+                <div>
+                  <input type="checkbox" id="fond_de_teint" name="products" value="foundation">
+                  <label for="fond_de_teint">Fond de teint</label>
+                </div>
+
+                <div>
+                  <input type="checkbox" id="poudre" name="products" value="powder">
+                  <label for="poudre">Poudre</label>
+                </div>
+
+                <div>
+                  <input type="checkbox" id="highlighter" name="products" value="highlighter">
+                  <label for="highlighter">Highlighter</label>
+                </div>
+
+                <div>
+                  <input type="checkbox" id="faux_cils" name="products" value="false_eyelashes">
+                  <label for="faux_cils">Faux cils</label>
+                </div>
+
+                <div>
+                  <input type="checkbox" id="lip_liner" name="products" value="lip_liner">
+                  <label for="lip_liner">Lip liner</label>
+                </div>
+            </form>
+            <div class="navigation">
+                <div class="retour"><a href="#frequency-section">Retour</a></div>
+                <div class="suivant"><a href="#local-needs-section">suivant <i class='bx bx-right-arrow-alt'></i></a></div>
+            </div>
+        </section>
+
+        <section class="question-section local-needs-section" id="local-needs-section">
+            <h3>Question 4/15</h3>
+            <div class="contenant">
+                <div class="barre-progression"></div>
+            </div>
+            <h2>4. Quels produits aimerais-tu voir plus souvent à Madagascar ? (Réponse courte)</h2>
+            <form>
+    <textarea id="desired_products" name="desired_products" rows="2" placeholder="Ta réponse" minlength="3" maxlength="500"></textarea>
+</form>
+            <div class="navigation">
+                <div class="retour"><a href="#products-section">Retour</a></div>
+                <div class="suivant"><a href="#style-section">suivant <i class='bx bx-right-arrow-alt'></i></a></div>
+            </div>
+        </section>
+
+        <section class="question-section style-section" id="style-section">
+            <h3>Question 5/15</h3>
+            <div class="contenant">
+                <div class="barre-progression"></div>
+            </div>
+            <h2>5. Quel style de maquillage préfères-tu ?</h2>
+            <form>
+                <div>
+                  <input type="radio" id="clean_girl" name="makeup_style" value="clean_girl">
+                  <label for="clean_girl">Clean girl</label>
+                </div>
+
+                <div>
+                  <input type="radio" id="soft_glam" name="makeup_style" value="soft_glam">
+                  <label for="soft_glam">Soft glam</label>
+                </div>
+
+                <div>
+                  <input type="radio" id="full_glam" name="makeup_style" value="full_glam">
+                  <label for="full_glam">Full glam</label>
+                </div>
+
+                <div>
+                  <input type="radio" id="naturel" name="makeup_style" value="natural">
+                  <label for="naturel">Naturel</label>
+                </div>
+
+                <div>
+                  <input type="radio" id="glow_makeup" name="makeup_style" value="glow_makeup">
+                  <label for="glow_makeup">Glow makeup</label>
+                </div>
+
+                <div>
+                  <input type="radio" id="makeup_artistique" name="makeup_style" value="artistic_trendy">
+                  <label for="makeup_artistique">Makeup artistique/trendy</label>
+                </div>
+            </form>
+            <div class="navigation">
+                <div class="retour"><a href="#local-needs-section">Retour</a></div>
+                <div class="suivant"><a href="#texture-section">suivant <i class='bx bx-right-arrow-alt'></i></a></div>
+            </div>
+        </section>
+
+        <section class="question-section texture-section" id="texture-section">
+            <h3>Question 6/15</h3>
+            <div class="contenant">
+                <div class="barre-progression"></div>
+            </div>
+            <h2>6. Quelles textures préfères-tu ?</h2>
+            <form>
+                <div>
+                  <input type="radio" id="glossy" name="preferred_texture" value="glossy">
+                  <label for="glossy">Glossy/brillant</label>
+                </div>
+
+                <div>
+                  <input type="radio" id="mat" name="preferred_texture" value="matte">
+                  <label for="mat">Mat</label>
+                </div>
+
+                <div>
+                  <input type="radio" id="cremeux" name="preferred_texture" value="creamy">
+                  <label for="cremeux">Crémeux</label>
+                </div>
+
+                <div>
+                  <input type="radio" id="leger" name="preferred_texture" value="lightweight_natural">
+                  <label for="leger">Léger/naturel</label>
+                </div>
+
+                <div>
+                  <input type="radio" id="tres_pigmente" name="preferred_texture" value="highly_pigmented">
+                  <label for="tres_pigmente">Très pigmenté</label>
+                </div>
+            </form>
+            <div class="navigation">
+                <div class="retour"><a href="#style-section">Retour</a></div>
+                <div class="suivant"><a href="#colors-section">suivant <i class='bx bx-right-arrow-alt'></i></a></div>
+            </div>
+        </section>
+
+        <section class="question-section colors-section" id="colors-section">
+            <h3>Question 7/15</h3>
+            <div class="contenant">
+                <div class="barre-progression"></div>
+            </div>
+            <h2>7. Quelles couleurs achètes-tu le plus ? (Cases à cocher)</h2>
+            <form>
+                <div>
+                  <input type="checkbox" id="nude" name="colors" value="nude">
+                  <label for="nude">Nude</label>
+                </div>
+
+                <div>
+                  <input type="checkbox" id="brun_caramel" name="colors" value="brown_caramel">
+                  <label for="brun_caramel">Brun/caramel</label>
+                </div>
+
+                <div>
+                  <input type="checkbox" id="rose" name="colors" value="pink">
+                  <label for="rose">Rose</label>
+                </div>
+
+                <div>
+                  <input type="checkbox" id="rouge" name="colors" value="red">
+                  <label for="rouge">Rouge</label>
+                </div>
+
+                <div>
+                  <input type="checkbox" id="corail_sunset" name="colors" value="coral_sunset">
+                  <label for="corail_sunset">Corail/sunset</label>
+                </div>
+
+                <div>
+                  <input type="checkbox" id="transparent" name="colors" value="transparent">
+                  <label for="transparent">Transparent</label>
+                </div>
+
+                <div>
+                  <input type="checkbox" id="bordeaux_chocolat" name="colors" value="burgundy_chocolate">
+                  <label for="bordeaux_chocolat">Bordeaux/chocolat</label>
+                </div>
+            </form>
+            <div class="navigation">
+                <div class="retour"><a href="#texture-section">Retour</a></div>
+                <div class="suivant"><a href="#issues-section">suivant <i class='bx bx-right-arrow-alt'></i></a></div>
+            </div>
+        </section>
+
+        <section class="question-section issues-section" id="issues-section">
+            <h3>Question 8/15</h3>
+            <div class="contenant">
+                <div class="barre-progression"></div>
+            </div>
+            <h2>8. Quels problèmes rencontres-tu avec les marques actuelles ? (Cases à cocher)</h2>
+            <form>
+                <div>
+                  <input type="checkbox" id="pas_as_se_teintes" name="brand_issues" value="insufficient_shades">
+                  <label for="pas_as_se_teintes">Pas assez de teintes adaptées</label>
+                </div>
+
+                <div>
+                  <input type="checkbox" id="mauvaise_tenue" name="brand_issues" value="poor_wear">
+                  <label for="mauvaise_tenue">Mauvaise tenue</label>
+                </div>
+
+                <div>
+                  <input type="checkbox" id="trop_cher" name="brand_issues" value="too_expensive">
+                  <label for="trop_cher">Trop cher</label>
+                </div>
+
+                <div>
+                  <input type="checkbox" id="packaging_pas_beau" name="brand_issues" value="unattractive_packaging">
+                  <label for="packaging_pas_beau">Packaging pas beau</label>
+                </div>
+
+                <div>
+                  <input type="checkbox" id="produits_difficiles_a_trouver" name="brand_issues" value="hard_to_find">
+                  <label for="produits_difficiles_a_trouver">Produits difficiles à trouver</label>
+                </div>
+
+                <div>
+                  <input type="checkbox" id="qualite_moyenne" name="brand_issues" value="average_quality">
+                  <label for="qualite_moyenne">Qualité moyenne</label>
+                </div>
+
+                <div>
+                  <input type="checkbox" id="pas_as_tendance" name="brand_issues" value="not_trendy_enough">
+                  <label for="pas_as_tendance">Pas assez tendance</label>
+                </div>
+            </form>
+            <div class="navigation">
+                <div class="retour"><a href="#colors-section">Retour</a></div>
+                <div class="suivant"><a href="#budget-section">suivant <i class='bx bx-right-arrow-alt'></i></a></div>
+            </div>
+        </section>
+
+        <section class="question-section budget-section" id="budget-section">
+            <h3>Question 9/15</h3>
+            <div class="contenant">
+                <div class="barre-progression"></div>
+            </div>
+            <h2>9. Combien serais-tu prêt(e) à payer pour : Un gloss/lip oil ?</h2>
+            <form>
+                <div>
+                  <input type="radio" id="15_25k" name="gloss_budget" value="ar_15_25k">
+                  <label for="15_25k">15–25k Ar</label>
+                </div>
+
+                <div>
+                  <input type="radio" id="25_40k" name="gloss_budget" value="ar_25_40k">
+                  <label for="25_40k">25–40k Ar</label>
+                </div>
+
+                <div>
+                  <input type="radio" id="40_60k" name="gloss_budget" value="ar_40_60k">
+                  <label for="40_60k">40–60k Ar</label>
+                </div>
+
+                <div>
+                  <input type="radio" id="60k_plus" name="gloss_budget" value="ar_60k_plus">
+                  <label for="60k_plus">60k+ Ar</label>
+                </div>
+            </form>
+            <div class="navigation">
+                <div class="retour"><a href="#issues-section">Retour</a></div>
+                <div class="suivant"><a href="#triggers-section">suivant <i class='bx bx-right-arrow-alt'></i></a></div>
+            </div>
+        </section>
+
+        <section class="question-section triggers-section" id="triggers-section">
+            <h3>Question 10/15</h3>
+            <div class="contenant">
+                <div class="barre-progression"></div>
+            </div>
+            <h2>10. Qu’est-ce qui te donne envie d’acheter une marque ? (Cases à cocher)</h2>
+            <form>
+                <div>
+                  <input type="checkbox" id="packaging_q10" name="purchase_triggers" value="packaging">
+                  <label for="packaging_q10">Packaging</label>
+                </div>
+
+                <div>
+                  <input type="checkbox" id="influenceurs_q10" name="purchase_triggers" value="influencers">
+                  <label for="influenceurs_q10">Influenceurs</label>
+                </div>
+
+                <div>
+                  <input type="checkbox" id="qualite_q10" name="purchase_triggers" value="quality">
+                  <label for="qualite_q10">Qualité</label>
+                </div>
+
+                <div>
+                  <input type="checkbox" id="prix_q10" name="purchase_triggers" value="price">
+                  <label for="prix_q10">Prix</label>
+                </div>
+
+                <div>
+                  <input type="checkbox" id="tiktok_instagram" name="purchase_triggers" value="tiktok_instagram">
+                  <label for="tiktok_instagram">TikTok/Instagram</label>
+                </div>
+
+                <div>
+                  <input type="checkbox" id="produits_trend" name="purchase_triggers" value="trendy_products">
+                  <label for="produits_trend">Produits tendance</label>
+                </div>
+
+                <div>
+                  <input type="checkbox" id="avis_clients" name="purchase_triggers" value="customer_reviews">
+                  <label for="avis_clients">Avis clients</label>
+                </div>
+            </form>
+            <div class="navigation">
+                <div class="retour"><a href="#budget-section">Retour</a></div>
+                <div class="suivant"><a href="#packaging-section">suivant <i class='bx bx-right-arrow-alt'></i></a></div>
+            </div>
+        </section>
+
+        <section class="question-section packaging-section" id="packaging-section">
+            <h3>Question 11/15</h3>
+            <div class="contenant">
+                <div class="barre-progression"></div>
+            </div>
+            <h2>11. Quel type de packaging préfères-tu ?</h2>
+            <form>
+                <div>
+                  <input type="radio" id="luxe_minimaliste" name="packaging_style" value="luxury_minimalist">
+                  <label for="luxe_minimaliste">Luxe minimaliste</label>
+                </div>
+
+                <div>
+                  <input type="radio" id="colore_fun" name="packaging_style" value="colorful_fun">
+                  <label for="colore_fun">Coloré/fun</label>
+                </div>
+
+                <div>
+                  <input type="radio" id="tropical_chic" name="packaging_style" value="tropical_chic">
+                  <label for="tropical_chic">Tropical chic</label>
+                </div>
+
+                <div>
+                  <input type="radio" id="glossy_moderne" name="packaging_style" value="modern_glossy">
+                  <label for="glossy_moderne">Glossy moderne</label>
+                </div>
+
+                <div>
+                  <input type="radio" id="simple_clean" name="packaging_style" value="simple_clean">
+                  <label for="simple_clean">Simple et clean</label>
+                </div>
+            </form>
+            <div class="navigation">
+                <div class="retour"><a href="#triggers-section">Retour</a></div>
+                <div class="suivant"><a href="#channels-section">suivant <i class='bx bx-right-arrow-alt'></i></a></div>
+            </div>
+        </section>
+
+        <section class="question-section channels-section" id="channels-section">
+            <h3>Question 12/15</h3>
+            <div class="contenant">
+                <div class="barre-progression"></div>
+            </div>
+            <h2>12. Où achètes-tu le plus souvent ton maquillage ?</h2>
+            <form>
+                <div>
+                  <input type="radio" id="instagram_facebook" name="purchase_channel" value="instagram_facebook">
+                  <label for="instagram_facebook">Instagram/Facebook</label>
+                </div>
+
+                <div>
+                  <input type="radio" id="boutique" name="purchase_channel" value="boutique">
+                  <label for="boutique">Boutique</label>
+                </div>
+
+                <div>
+                  <input type="radio" id="revendeurs" name="purchase_channel" value="resellers">
+                  <label for="revendeurs">Revendeurs</label>
+                </div>
+
+                <div>
+                  <input type="radio" id="centre_commercial" name="purchase_channel" value="shopping_mall">
+                  <label for="centre_commercial">Centre commercial</label>
+                </div>
+
+                <div>
+                  <input type="radio" id="tiktok_shop" name="purchase_channel" value="tiktok_shop">
+                  <label for="tiktok_shop">TikTok Shop</label>
+                </div>
+
+                <div>
+                  <input type="radio" id="marches" name="purchase_channel" value="markets">
+                  <label for="marches">Marchés/braderies</label>
+                </div>
+            </form>
+            <div class="navigation">
+                <div class="retour"><a href="#packaging-section">Retour</a></div>
+                <div class="suivant"><a href="#interest-section">suivant <i class='bx bx-right-arrow-alt'></i></a></div>
+            </div>
+        </section>
+
+        <section class="question-section interest-section" id="interest-section">
+            <h3>Question 13/15</h3>
+            <div class="contenant">
+                <div class="barre-progression"></div>
+            </div>
+            <h2>13. Serais-tu intéressé(e) par une nouvelle marque malgache moderne et inclusive ?</h2>
+            <form>
+                <div>
+                  <input type="radio" id="oui_q13" name="local_brand_interest" value="yes">
+                  <label for="oui_q13">Oui</label>
+                </div>
+
+                <div>
+                  <input type="radio" id="peut_etre_q13" name="local_brand_interest" value="maybe">
+                  <label for="peut_etre_q13">Peut-être</label>
+                </div>
+
+                <div>
+                  <input type="radio" id="non_q13" name="local_brand_interest" value="no">
+                  <label for="non_q13">Non</label>
+                </div>
+            </form>
+            <div class="navigation">
+                <div class="retour"><a href="#channels-section">Retour</a></div>
+                <div class="suivant"><a href="#influencers-section">suivant <i class='bx bx-right-arrow-alt'></i></a></div>
+            </div>
+        </section>
+
+        <section class="question-section influencers-section" id="influencers-section">
+            <h3>Question 14/15</h3>
+            <div class="contenant">
+                <div class="barre-progression"></div>
+            </div>
+            <h2>14. Quel influenceur beauté malgache suis-tu le plus ? (Réponse courte)</h2>
+            <form>
+    <textarea id="followed_influencer" name="followed_influencer" rows="2" placeholder="Ton influenceur préféré" minlength="3" maxlength="500"></textarea>
+</form>
+            <div class="navigation">
+                <div class="retour"><a href="#interest-section">Retour</a></div>
+                <div class="suivant"><a href="#ideal-brand-section">suivant <i class='bx bx-right-arrow-alt'></i></a></div>
+            </div>
+        </section>
+
+        <section class="question-section ideal-brand-section" id="ideal-brand-section">
+            <h3>Question 15/15</h3>
+            <div class="contenant">
+                <div class="barre-progression"></div>
+            </div>
+            <h2>15. Optionnel : “Décris la marque de maquillage idéale selon toi ✨” (Réponse courte)</h2>
+            <form>
+                  <textarea id="ideal_brand" name="ideal_brand" rows="4" placeholder="Décris la marque idéale selon toi ✨" maxlength="2000"></textarea>
+            </form>
+           <div class="navigation">
+                <div class="retour"><a href="#influencers-section">Retour</a></div>
+                <button type="button" class="confirme" id="btn-confirmer"><span>Confirmé</span></button>
+            </div>
+        </section>
+    </div>
+    </main>
+    <footer >
+      <h3>L'ÉCLAT DE MADAGASCAR</h3>
+        <div class="barre"></div>
+        <p>by <strong> MDevFront</strong></p>
+        <p>© 2023 Rêve d'ébene. Tous droits réservés.</p>
+    </footer>
+</body>
+</html>
