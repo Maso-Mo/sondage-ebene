@@ -1,0 +1,39 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 420 560" role="img" aria-labelledby="title">
+  <title id="title">Tulipes poudrées semi-ouvertes</title>
+  <defs>
+    <linearGradient id="t-petal" x1="0" y1="0" x2="1" y2="1">
+      <stop stop-color="#ffecef"/>
+      <stop offset=".55" stop-color="#e9a6b8"/>
+      <stop offset="1" stop-color="#b95f7e"/>
+    </linearGradient>
+    <linearGradient id="t-petal-soft" x1="0" y1="0" x2="1" y2="1">
+      <stop stop-color="#f9dce3"/>
+      <stop offset="1" stop-color="#ce7f98"/>
+    </linearGradient>
+    <linearGradient id="t-leaf" x1="0" y1="0" x2="1" y2="1">
+      <stop stop-color="#c1cbb3"/>
+      <stop offset="1" stop-color="#738369"/>
+    </linearGradient>
+  </defs>
+
+  <path d="M208 199c-10 106 8 224-4 340M116 244c35 87 61 171 74 265M303 226c-39 93-67 183-81 282" fill="none" stroke="#78876d" stroke-width="7" stroke-linecap="round"/>
+  <path d="M196 400C121 343 66 365 36 426c70 43 124 34 160-26Z" fill="url(#t-leaf)"/>
+  <path d="M211 451c56-66 112-61 157-15-53 58-105 62-157 15Z" fill="url(#t-leaf)"/>
+  <path d="M177 330c-55-44-101-30-128 14 50 39 94 35 128-14ZM238 353c48-51 95-47 131-7-44 46-88 49-131 7Z" fill="url(#t-leaf)" opacity=".9"/>
+
+  <g transform="translate(207 133)">
+    <path d="M0 83C-64 82-104 43-94-15c5-29 23-55 52-76 8 31 22 51 42 63 20-12 35-33 44-65 30 22 49 49 53 79 7 57-34 96-97 97Z" fill="url(#t-petal)"/>
+    <path d="M0 83C-30 54-44 18-42-91-8-65 9-36 0-4c-8-32 10-61 44-89 2 108-14 146-44 176Z" fill="#d77f9a" opacity=".78"/>
+    <path d="M0 82C-16 49-15 17 0-28 17 44 16 61 0 82Z" fill="#ad5574" opacity=".72"/>
+  </g>
+
+  <g transform="translate(105 205) rotate(-17)">
+    <path d="M0 57C-39 56-64 30-59-10c4-27 24-50 59-67 33 19 52 42 56 68 6 39-18 65-56 66Z" fill="url(#t-petal-soft)"/>
+    <path d="M0 57C-15 29-15-12 0-77 17 62 15 29 0 57Z" fill="#ba6682" opacity=".72"/>
+  </g>
+
+  <g transform="translate(310 184) rotate(15)">
+    <path d="M0 61C-42 60-69 32-63-12c4-28 25-53 63-71 36 20 57 46 61 73 6 43-20 69-61 70Z" fill="url(#t-petal)"/>
+    <path d="M0 60C-16 30-16-14 0-83 18 65 16 30 0 60Z" fill="#a94e6d" opacity=".7"/>
+  </g>
+</svg>

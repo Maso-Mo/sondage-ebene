@@ -1,0 +1,49 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 520 520" role="img" aria-labelledby="title">
+  <title id="title">Rose ouverte vue de face</title>
+  <defs>
+    <radialGradient id="r-petal" cx="38%" cy="30%" r="75%">
+      <stop offset="0" stop-color="#fff2f3"/>
+      <stop offset=".48" stop-color="#efbdc9"/>
+      <stop offset="1" stop-color="#c87391"/>
+    </radialGradient>
+    <linearGradient id="r-deep" x1="0" y1="0" x2="1" y2="1">
+      <stop stop-color="#d98ba3"/>
+      <stop offset="1" stop-color="#984b69"/>
+    </linearGradient>
+    <linearGradient id="r-leaf" x1="0" y1="0" x2="1" y2="1">
+      <stop stop-color="#bac5a9"/>
+      <stop offset="1" stop-color="#718264"/>
+    </linearGradient>
+    <filter id="r-shadow" x="-30%" y="-30%" width="160%" height="170%">
+      <feDropShadow dx="0" dy="16" stdDeviation="14" flood-color="#6b354a" flood-opacity=".14"/>
+    </filter>
+  </defs>
+
+  <path d="M267 307c8 66 32 123 69 181" fill="none" stroke="#748267" stroke-width="7" stroke-linecap="round"/>
+  <path d="M306 388c52-40 103-36 137 2-47 40-94 41-137-2Z" fill="url(#r-leaf)"/>
+  <path d="M290 350c-51-35-100-28-129 14 48 34 93 30 129-14Z" fill="url(#r-leaf)"/>
+  <g filter="url(#r-shadow)" transform="translate(255 220)">
+    <g fill="url(#r-petal)">
+      <ellipse rx="67" ry="119" transform="rotate(0) translate(0 -61)"/>
+      <ellipse rx="67" ry="119" transform="rotate(45) translate(0 -61)"/>
+      <ellipse rx="67" ry="119" transform="rotate(90) translate(0 -61)"/>
+      <ellipse rx="67" ry="119" transform="rotate(135) translate(0 -61)"/>
+      <ellipse rx="67" ry="119" transform="rotate(180) translate(0 -61)"/>
+      <ellipse rx="67" ry="119" transform="rotate(225) translate(0 -61)"/>
+      <ellipse rx="67" ry="119" transform="rotate(270) translate(0 -61)"/>
+      <ellipse rx="67" ry="119" transform="rotate(315) translate(0 -61)"/>
+    </g>
+    <circle r="116" fill="#e7a3b5" opacity=".42"/>
+    <g fill="url(#r-deep)" opacity=".96">
+      <ellipse rx="42" ry="73" transform="rotate(20) translate(0 -31)"/>
+      <ellipse rx="42" ry="73" transform="rotate(92) translate(0 -31)"/>
+      <ellipse rx="42" ry="73" transform="rotate(164) translate(0 -31)"/>
+      <ellipse rx="42" ry="73" transform="rotate(236) translate(0 -31)"/>
+      <ellipse rx="42" ry="73" transform="rotate(308) translate(0 -31)"/>
+    </g>
+    <circle r="48" fill="#bd6684"/>
+    <path d="M-29 8C-18-34 15-43 36-16 52 7 33 38 4 40-15 42-34 29-29 8Z" fill="#934761"/>
+    <path d="M-5-9C10-22 29-9 25 8 21 25 0 29-11 16-18 8-14-1-5-9Z" fill="#733449"/>
+    <circle cx="7" cy="5" r="9" fill="#572639"/>
+  </g>
+</svg>

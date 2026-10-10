@@ -1,36 +1,30 @@
-import { useEffect, useState } from 'react'
-import { Navigate } from 'react-router-dom'
-import { supabase } from '../lib/supabase'
+import type { ReactNode } from 'react'
+import { Navigate, useLocation } from 'react-router-dom'
 
-type Props = {
-  children: React.ReactNode
-}
+import { ErrorState, LoadingState } from '../components/FeedbackStates'
+import { useAdminAuth } from '../contexts/useAdminAuth'
 
-export default function ProtectedRoute({ children }: Props) {
-  const [loading, setLoading] = useState(true)
-  const [authenticated, setAuthenticated] = useState(false)
+export default function ProtectedRoute({ children }: { children: ReactNode }) {
+  const location = useLocation()
+  const { status, message, refresh } = useAdminAuth()
 
-  useEffect(() => {
-    supabase.auth.getSession().then(({ data }) => {
-      setAuthenticated(Boolean(data.session))
-      setLoading(false)
-    })
-
-    const {
-      data: { subscription },
-    } = supabase.auth.onAuthStateChange((_event, session) => {
-      setAuthenticated(Boolean(session))
-    })
-
-    return () => subscription.unsubscribe()
-  }, [])
-
-  if (loading) {
-    return <div>Chargement...</div>
+  if (status === 'loading') {
+    return <LoadingState fullPage label="Vérification de votre accès…" />
   }
 
-  if (!authenticated) {
-    return <Navigate to="/login" replace />
+  if (status === 'error') {
+    return (
+      <ErrorState
+        fullPage
+        title="Accès impossible à vérifier"
+        message={message ?? 'Une erreur réseau empêche la vérification de vos droits.'}
+        onRetry={() => void refresh()}
+      />
+    )
+  }
+
+  if (status !== 'authenticated') {
+    return <Navigate to="/login" replace state={{ from: location.pathname, message }} />
   }
 
   return children

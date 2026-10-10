@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 360 440" role="img" aria-labelledby="title">
+  <title id="title">Rameau de feuilles fines</title>
+  <defs>
+    <linearGradient id="l-leaf" x1="0" y1="0" x2="1" y2="1">
+      <stop stop-color="#d0d7c7"/>
+      <stop offset="1" stop-color="#7d8d73"/>
+    </linearGradient>
+  </defs>
+  <path d="M45 420C96 292 174 164 319 28" fill="none" stroke="#89967f" stroke-width="5" stroke-linecap="round"/>
+  <g fill="url(#l-leaf)">
+    <path d="M83 330C24 337 2 304 10 259c54-6 82 17 73 71Z"/>
+    <path d="M100 300c9-57 47-82 94-67-10 51-42 76-94 67Z"/>
+    <path d="M137 235c-53-5-76-36-67-78 49 4 74 31 67 78Z"/>
+    <path d="M164 207c12-54 49-77 95-62-13 50-45 72-95 62Z"/>
+    <path d="M210 150c-45-13-61-45-44-81 41 12 59 39 44 81Z"/>
+    <path d="M237 119c17-45 51-59 88-38-16 41-46 56-88 38Z"/>
+    <path d="M55 382C16 383-2 360 2 329c36-2 56 17 53 53Z"/>
+  </g>
+  <g fill="none" stroke="#f3f1e9" stroke-width="2" opacity=".65">
+    <path d="m18 274 63 53M77 168l58 63M176 78l33 67M247 111l72-27"/>
+  </g>
+</svg>

@@ -1,0 +1,38 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 460 460" role="img" aria-labelledby="title">
+  <title id="title">Composition florale de coin</title>
+  <defs>
+    <radialGradient id="c-petal" cx="35%" cy="28%" r="80%">
+      <stop stop-color="#fff2f4"/><stop offset=".5" stop-color="#ebb1c0"/><stop offset="1" stop-color="#bf6685"/>
+    </radialGradient>
+    <linearGradient id="c-leaf" x1="0" y1="0" x2="1" y2="1">
+      <stop stop-color="#cbd4be"/><stop offset="1" stop-color="#78896e"/>
+    </linearGradient>
+    <linearGradient id="c-bud" x1="0" y1="0" x2="1" y2="1">
+      <stop stop-color="#f9dce3"/><stop offset="1" stop-color="#bb607f"/>
+    </linearGradient>
+  </defs>
+  <g fill="none" stroke="#839178" stroke-width="5" stroke-linecap="round">
+    <path d="M449 448C365 348 302 247 278 107M449 448C354 385 260 343 146 319M449 448c-49-137-36-250 28-352"/>
+  </g>
+  <g fill="url(#c-leaf)">
+    <path d="M377 368c-61-50-117-42-153 5 56 46 110 44 153-5ZM405 387c34-66 84-79 136-51-33 60-77 76-136 51Z"/>
+    <path d="M317 289c-54-39-101-28-128 15 50 36 95 31 128-15ZM344 303c37-51 83-57 125-26-35 47-77 55-125 26Z"/>
+    <path d="M285 207c-45-29-85-18-105 20 42 27 79 21 105-20Z"/>
+  </g>
+  <g transform="translate(275 123)">
+    <path d="M0 54C-36 53-58 29-53-8c3-24 21-45 53-60 30 16 48 38 51 61 5 36-17 60-51 61Z" fill="url(#c-bud)"/>
+    <path d="M0 53C-13 26-13-10 0-68 15-11 15 26 0 53Z" fill="#a74c6a" opacity=".65"/>
+  </g>
+  <g transform="translate(150 303)">
+    <g fill="url(#c-petal)">
+      <ellipse rx="39" ry="67" transform="rotate(0) translate(0 -35)"/><ellipse rx="39" ry="67" transform="rotate(60) translate(0 -35)"/><ellipse rx="39" ry="67" transform="rotate(120) translate(0 -35)"/><ellipse rx="39" ry="67" transform="rotate(180) translate(0 -35)"/><ellipse rx="39" ry="67" transform="rotate(240) translate(0 -35)"/><ellipse rx="39" ry="67" transform="rotate(300) translate(0 -35)"/>
+    </g>
+    <circle r="49" fill="#cf7692"/><circle r="29" fill="#9e4967"/><circle r="12" fill="#682c42"/>
+  </g>
+  <g transform="translate(361 219) scale(.7)">
+    <g fill="url(#c-petal)">
+      <ellipse rx="39" ry="67" transform="rotate(0) translate(0 -35)"/><ellipse rx="39" ry="67" transform="rotate(60) translate(0 -35)"/><ellipse rx="39" ry="67" transform="rotate(120) translate(0 -35)"/><ellipse rx="39" ry="67" transform="rotate(180) translate(0 -35)"/><ellipse rx="39" ry="67" transform="rotate(240) translate(0 -35)"/><ellipse rx="39" ry="67" transform="rotate(300) translate(0 -35)"/>
+    </g>
+    <circle r="48" fill="#ca708d"/><circle r="27" fill="#93415f"/><circle r="11" fill="#60263b"/>
+  </g>
+</svg>
